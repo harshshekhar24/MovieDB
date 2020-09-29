@@ -27,11 +27,14 @@
   },
   "private": true,
   "dependencies": {
+    "axios": "^0.20.0",
     "document-register-element": "1.13.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-redux": "^7.2.1",
-    "redux": "^4.0.5"
+    "redux": "^4.0.5",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
     "@nrwl/workspace": "10.2.1",
