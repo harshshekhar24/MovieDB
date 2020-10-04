@@ -1,9 +1,8 @@
 import React from 'react';
 import Header from './components/Header';
 import Layout from './components/home/Layout';
-import './app.css';
 import {Provider} from 'react-redux';
-import store from '../store'; 
+import store from '../../../../libs/store'; 
 
 export const App = () => {
 

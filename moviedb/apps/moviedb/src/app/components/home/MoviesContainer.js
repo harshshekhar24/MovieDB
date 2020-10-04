@@ -14,7 +14,7 @@ const MoviesContainer = (props) => {
         <MovieCard key={index} movie={movie} />
       ));
     }
-    return <div>{content}</div>;
+    return <div className="movie_container" >{content}</div>;
   };
   
   const mapStateToProps = (state) => ({

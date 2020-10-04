@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+.header
+{
+    font-size: 60px;
+    text-align: center;
+    font-weight: bold;
+    background-color: black;
+    color: blanchedalmond;
+    margin-top: -1%;
+}
+.searchbox
+{
+    width: 50%;
+}
+.search__container
+{
+    text-align: center;
+}
+.search__form
+{
+    display: inline-block;
+    width: 50%;
+    margin-bottom: 5%;
+}
+.movie_container
+{
+    text-align: center;
+}
+.movie__card
+{
+}

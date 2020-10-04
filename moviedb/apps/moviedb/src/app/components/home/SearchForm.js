@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 //import {searchMovie, fetchMovies} from '../../actions/searchActions';
-import {searchMovie, fetchMovies} from '../../../actions/searchActions';
+import {searchMovie, fetchMovies} from '../../../../../../libs/actions/searchActions';
 import {connect} from 'react-redux';
 
 export class SearchForm extends Component {
@@ -15,9 +15,9 @@ export class SearchForm extends Component {
     }
     render() {
         return (
-            <div>
-            <form onSubmit={this.onSubmit}>
-            <input type="text" placeholder="Search" name="seachText" onChange={this.onChange}/>
+            <div className="search__container">
+            <form onSubmit={this.onSubmit} className="search__form">
+            <input  className="searchbox" type="text" placeholder="Search" name="seachText" onChange={this.onChange}/>
             <button type = 'submit'> Search </button>
             </form>
             </div>

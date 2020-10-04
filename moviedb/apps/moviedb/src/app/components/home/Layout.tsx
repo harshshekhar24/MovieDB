@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import SearchForm from './SearchForm';
 import {connect} from 'react-redux';
-import Spinner from '../Spinner';
 import MoviesContainer from './MoviesContainer';
 
 export class Layout extends Component {
