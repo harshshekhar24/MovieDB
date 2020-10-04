@@ -14,7 +14,7 @@ export const fetchMovies = text => dispatch=>{
     axios.get(`https://api.themoviedb.org/3/search/movie?api_key=${APIKey}&query=${text}&page=1&include_adult=false`)
     .then(response => dispatch({
         type: FETCH_MOVIE,
-        payload: response.data
+        payload: response.data.results
     }))
     .catch(err => console.log(err))
     //console.log(text);
