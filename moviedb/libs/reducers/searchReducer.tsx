@@ -1,13 +1,14 @@
-import  {FETCH_MOVIE, SEARCH_MOVIE} from '../actions/types';
+//import { stateinit } from 'libs/types/stateinit';
+import  {FETCH_MOVIE, SEARCH_MOVIE, SearchActionTypes} from '../types/types';
+import {statetype} from '../types/stateinit'; 
+//const initialState = {
+  //  text: '',
+    //movies: [],
+   // movie: []
+//};
+const initialState: statetype[] = [];
 
-const initialState = {
-    text: '',
-    movies: [],
-    //loading: false,
-    movie: []
-};
-
-export default function(state = initialState, action)
+export default function(state = initialState, action:SearchActionTypes)
 {
     //console.log(action.payload);
     switch (action.type) {

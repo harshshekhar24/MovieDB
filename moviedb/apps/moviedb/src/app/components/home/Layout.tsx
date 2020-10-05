@@ -3,6 +3,7 @@ import SearchForm from './SearchForm';
 import {connect} from 'react-redux';
 import MoviesContainer from './MoviesContainer';
 
+//import 'semantic-ui-css/semantic.min.css';
 export class Layout extends Component {
     render() {
         return (
@@ -14,8 +15,5 @@ export class Layout extends Component {
     }
 }
 
-const mapStateToProps = state => ({
-    loading: state.movies.loading
-})
 
-export default connect(mapStateToProps)(Layout);
+export default Layout;

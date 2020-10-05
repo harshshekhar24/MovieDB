@@ -10,7 +10,7 @@ export class SearchForm extends Component {
 
     onSubmit = e => {
         e.preventDefault();
-        this.props.fetchMovies(this.props.text)
+        this.props.fetchMovies(this.props.text);
         //console.log(this.props.text)
     }
     render() {
@@ -25,7 +25,7 @@ export class SearchForm extends Component {
     }
 }
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state) => ({
     text: state.movies.text
 });
 

@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import MovieCard from './MovieCard';
-import PropTypes from 'prop-types';
-import { title } from 'process';
 
 const MoviesContainer = (props) => {
     const { movies } = props;
@@ -14,7 +12,7 @@ const MoviesContainer = (props) => {
         <MovieCard key={index} movie={movie} />
       ));
     }
-    return <div className="movie_container" >{content}</div>;
+    return <div className="ui divided three column grid" ><div className="movie__container" >{content}</div></div>;
   };
   
   const mapStateToProps = (state) => ({
