@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 //import 'semantic-ui-css/semantic.min.css';
 
-export class MovieCard extends Component {
+interface MovieCardProps
+{
+    movie:any;
+}
+export class MovieCard extends Component<MovieCardProps>{
     render() {
         const {movie} = this.props;
         return (

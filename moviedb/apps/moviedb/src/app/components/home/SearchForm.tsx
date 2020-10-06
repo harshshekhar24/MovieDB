@@ -2,8 +2,16 @@ import React, { Component } from 'react';
 //import {searchMovie, fetchMovies} from '../../actions/searchActions';
 import {searchMovie, fetchMovies} from '../../../../../../libs/actions/searchActions';
 import {connect} from 'react-redux';
+import { AppState } from 'libs/store';
 
-export class SearchForm extends Component {
+interface SearchFromProps
+{   
+    text?:string;
+    searchMovie: (text:string) => void;
+    fetchMovies:(text:string)=> void;
+}
+
+export class SearchForm extends Component <SearchFromProps>{
     onChange = e => {
         this.props.searchMovie(e.target.value);
     }
@@ -28,5 +36,6 @@ export class SearchForm extends Component {
 const mapStateToProps = (state) => ({
     text: state.movies.text
 });
+
 
 export default connect(mapStateToProps, {searchMovie,fetchMovies})(SearchForm);
