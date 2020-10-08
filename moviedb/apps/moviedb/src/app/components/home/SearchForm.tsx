@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-//import {searchMovie, fetchMovies} from '../../actions/searchActions';
 import {searchMovie, fetchMovies} from '../../../../../../libs/actions/searchActions';
 import {connect} from 'react-redux';
-import { AppState } from 'libs/store';
 
 interface SearchFromProps
 {   
@@ -14,12 +12,12 @@ interface SearchFromProps
 export class SearchForm extends Component <SearchFromProps>{
     onChange = e => {
         this.props.searchMovie(e.target.value);
+        //console.log(e.target.value);
     }
 
     onSubmit = e => {
         e.preventDefault();
         this.props.fetchMovies(this.props.text);
-        //console.log(this.props.text)
     }
     render() {
         return (

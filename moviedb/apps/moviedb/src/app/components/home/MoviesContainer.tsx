@@ -4,6 +4,8 @@ import MovieCard from './MovieCard';
 
 const MoviesContainer = (props) => {
     const { movies } = props;
+    
+    console.log(movies);
     let content = "";
     if (movies === undefined) {
       console.log("Unable to find any movies");
